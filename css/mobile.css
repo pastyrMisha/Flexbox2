@@ -1,0 +1,298 @@
+@media (min-width: 576px) and (max-width: 768px) {
+    .price_ones .price_ones_correction h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1215px) {
+
+    .price_ones {
+        justify-content: center;
+    }
+
+    .price_ones_a {
+        flex-basis: 339px;
+        margin: 0;
+    }
+
+    .price_ones_correction {
+        justify-content: space-around;
+        height: 210px;
+    }
+}
+
+@media (max-width: 1047px) {
+    .contacts_logo {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacts_info {
+        margin-bottom: 20px;
+    }
+
+    .contacts_adress {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-header {
+        flex-wrap: wrap;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .main-header_dropdown {
+        flex-grow: unset;
+        margin-left: auto;
+    }
+
+    .main-header_call img {
+        margin-left: 10px;
+
+    }
+}
+
+@media (max-width: 787px) {
+    .main-header_call {
+        flex-grow: unset;
+    }
+
+    .magazine_table {
+        justify-content: flex-start;
+    }
+
+    .magazine_table_cell {
+        flex-basis: 30%;
+        margin-left: 20px;
+
+    }
+
+    .information_advantage {
+        justify-content: space-around;
+    }
+
+    .information_advantage_one {
+        flex-basis: 35%;
+    }
+
+
+}
+
+@media (max-width: 687px) {
+    .magazine_table {
+        justify-content: space-around;
+    }
+
+    .magazine_table_cell {
+        flex-basis: 40%;
+    }
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
+        align-self: center;
+    }
+
+    .work_timeline_first h4::after,
+    .work_timeline_third h4::after,
+    .work_timeline_fifth h4::after {
+        right: 412px;
+    }
+
+    .work_timeline_first h4::before,
+    .work_timeline_third h4::before,
+    .work_timeline_fifth h4::before {
+        right: 440px;
+    }
+
+    .work_timeline_first p::after,
+    .work_timeline_third p::after,
+    .work_timeline_fifth p::after {
+        right: 446px;
+    }
+
+}
+
+@media (max-width: 623px) {
+    .a-logo {
+        flex-basis: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .contacts_logo .a-logo {
+        text-align: left;
+    }
+
+    .main-header_dropdown {
+       
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .main-header_call,
+    .tel {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .main-header {
+        height: 170px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .main-header_navigation {
+        margin-top: -50px;
+    }
+
+    .moreInfo_list {
+        flex-wrap: wrap;
+    }
+
+    .moreInfo_list_ones {
+        flex-basis: 70%;
+        margin-left: 20px;
+        margin-top: 20px;
+
+    }
+
+    .map_two_three {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .price_ones {
+        flex-basis: 100%;
+    }
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
+        align-self: flex-end;
+    }
+
+    .moreInfo_place_one {
+        flex-basis: 40%;
+        margin-left: auto;
+    }
+
+    .moreInfo_place_one p {
+        padding: 0px;
+    }
+
+    .garanty_second,
+    .garanty_third {
+        flex-basis: 100%;
+    }
+
+    .garanty_third {
+        margin-top: 20px;
+        padding-left: 30px;
+    }
+
+    .garanty_second_list {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+        width: 280px;
+        align-self: center;
+        height: auto;
+    }
+    .work_timeline_first h4, .work_timeline_second h4, .work_timeline_third h4, .work_timeline_fourth h4, .work_timeline_fifth h4, .work_timeline_sixth h4,
+    .work_timeline_first p, .work_timeline_second p, .work_timeline_third p, .work_timeline_fourth p, .work_timeline_fifth p, .work_timeline_sixth p {
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    .work_timeline_first h4::after,
+    .work_timeline_third h4::after,
+    .work_timeline_fifth h4::after {
+        right: 0;
+        left: -74px;
+    }
+
+    .work_timeline_first h4::before,
+    .work_timeline_third h4::before,
+    .work_timeline_fifth h4::before {
+        right: 0;
+        left: -45px;
+    }
+
+    .work_timeline_first p::after,
+    .work_timeline_third p::after,
+    .work_timeline_fifth p::after {
+        right: 317px;
+    }
+    .work_timeline_second p::after, .work_timeline_fourth p::after, .work_timeline_sixth p::after {
+        left: -41px;
+    }
+}
+@media (max-width: 414px) {
+    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+        align-self: flex-end;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 370px) {
+    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+        margin-right: 10px;
+        width: 240px;
+    }
+    .work_timeline_first p::after,
+    .work_timeline_third p::after,
+    .work_timeline_fifth p::after {
+        right: 277px;
+    }
+}
+@media (max-width: 320px) {
+    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+        margin-right: 0;
+    }
+    .contacts_logo {
+        padding-left: 0;
+    }
+    .magazine_table_cell {
+        flex-basis: 100%;
+    }
+    .magazine_table_cell a {
+        text-align: left;
+    }
+
+}
+@media (max-width: 319px) {
+    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+        width: 180px;
+    }
+    .work_timeline_first p::after,
+    .work_timeline_third p::after,
+    .work_timeline_fifth p::after {
+        right: 216px;
+    }
+    a.social {
+        margin-left: 4px;
+    }
+    .img-logo {
+        max-width: 270px;
+        margin-left: 0;
+    }
+    .garanty_third {
+        padding-left: 10px;
+    }
+    .price_ones img {
+        margin-bottom: 7px;
+    }
+}
