@@ -989,3 +989,10 @@
  .main-header_dropdown__contacts a:last-child {
 	color: #000;
  }
+.open_dropdown {
+	display: block;
+}
+ 
+ .closed_dropdown {
+	 display: none;
+ }
