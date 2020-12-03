@@ -124,12 +124,13 @@
         text-align: center;
         margin-right: 0;
     }
+
     .contacts_logo .a-logo {
         text-align: left;
     }
 
     .main-header_dropdown {
-       
+
         margin-left: 0;
         margin: 0 auto;
     }
@@ -208,16 +209,34 @@
 }
 
 @media (max-width: 500px) {
-    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
         width: 280px;
         align-self: center;
         height: auto;
     }
-    .work_timeline_first h4, .work_timeline_second h4, .work_timeline_third h4, .work_timeline_fourth h4, .work_timeline_fifth h4, .work_timeline_sixth h4,
-    .work_timeline_first p, .work_timeline_second p, .work_timeline_third p, .work_timeline_fourth p, .work_timeline_fifth p, .work_timeline_sixth p {
+
+    .work_timeline_first h4,
+    .work_timeline_second h4,
+    .work_timeline_third h4,
+    .work_timeline_fourth h4,
+    .work_timeline_fifth h4,
+    .work_timeline_sixth h4,
+    .work_timeline_first p,
+    .work_timeline_second p,
+    .work_timeline_third p,
+    .work_timeline_fourth p,
+    .work_timeline_fifth p,
+    .work_timeline_sixth p {
         padding-left: 10px;
         margin-left: 0;
     }
+
     .work_timeline_first h4::after,
     .work_timeline_third h4::after,
     .work_timeline_fifth h4::after {
@@ -237,61 +256,101 @@
     .work_timeline_fifth p::after {
         right: 317px;
     }
-    .work_timeline_second p::after, .work_timeline_fourth p::after, .work_timeline_sixth p::after {
+
+    .work_timeline_second p::after,
+    .work_timeline_fourth p::after,
+    .work_timeline_sixth p::after {
         left: -41px;
     }
 }
+
 @media (max-width: 414px) {
-    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
         align-self: flex-end;
         margin-right: 20px;
     }
 }
+
 @media (max-width: 370px) {
-    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
         margin-right: 10px;
         width: 240px;
     }
+
     .work_timeline_first p::after,
     .work_timeline_third p::after,
     .work_timeline_fifth p::after {
         right: 277px;
     }
 }
+
 @media (max-width: 320px) {
-    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
         margin-right: 0;
     }
+
     .contacts_logo {
         padding-left: 0;
     }
+
     .magazine_table_cell {
         flex-basis: 100%;
     }
+
     .magazine_table_cell a {
         text-align: left;
     }
 
 }
+
 @media (max-width: 319px) {
-    .work_timeline_first, .work_timeline_second, .work_timeline_third, .work_timeline_fourth, .work_timeline_fifth, .work_timeline_sixth {
+
+    .work_timeline_first,
+    .work_timeline_second,
+    .work_timeline_third,
+    .work_timeline_fourth,
+    .work_timeline_fifth,
+    .work_timeline_sixth {
         width: 180px;
     }
+
     .work_timeline_first p::after,
     .work_timeline_third p::after,
     .work_timeline_fifth p::after {
         right: 216px;
     }
+
     a.social {
         margin-left: 4px;
     }
+
     .img-logo {
         max-width: 270px;
         margin-left: 0;
     }
+
     .garanty_third {
         padding-left: 10px;
     }
+
     .price_ones img {
         margin-bottom: 7px;
     }
