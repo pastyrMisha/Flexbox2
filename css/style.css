@@ -154,6 +154,9 @@ a li {
 
 .callback {
     font-size: 21px;
+    background: transparent;
+    border: none;
+    color: #73634C;
 }
 
 .callback:hover,
@@ -168,8 +171,12 @@ a li {
     background: #DDD7C1;
 }
 
-.callback:focus {
+.callback:focus, 
+.callback:active {
     border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 ::selection {
@@ -908,7 +915,7 @@ a.social {
 
 }
 
-.contacts_info p {
+.contacts_info a:first-child {
     font-weight: bold;
 }
 
