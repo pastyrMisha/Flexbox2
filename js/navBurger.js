@@ -2,9 +2,8 @@ const menuBurger = document.querySelector(".a-burger");
 const menuAll = document.querySelector(".main-header_dropdown__menu");
 const closeMenu = document.querySelector(".main-header_dropdown__close");
 const section = document.getElementsByTagName('section');
-const btn = document.querySelector('.callback');
-const hiddenElement = document.getElementById('garanty_third_number_sendform_item___phone');
-const order = document.querySelector('.garanty_third_number');
+const callbackBtn = document.querySelector('.callback');
+const telField= document.getElementById('garanty_third_number_sendform_item___phone');
 
 
 menuBurger.addEventListener("click", function (evt) {
@@ -28,10 +27,12 @@ closeMenu.addEventListener("click", function (evt) {
     }
 });
 
-function handleButtonClick() {
-    order.scrollIntoView({block: "start", behavior: "smooth"});
-    window.scrollBy(-10000, -1100);
-    hiddenElement.focus();
- }
- 
- btn.addEventListener('click', handleButtonClick);
+//  focusMethod = function getFocus() {           
+//     telField.focus();
+//   }
+
+callbackBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    telField.focus();
+    telField.scrollIntoView({block: "start", behavior: "smooth"});
+});
