@@ -408,7 +408,7 @@ h4 {
   }
 
 
-  #close-popup {
+  #closepopup {
     width: 30px;
     height: 30px;
     background: #FFFFFF;
@@ -420,7 +420,7 @@ h4 {
     right: 15px;
   }
 
-  #close-popup i {
+  #closepopup i {
     width: 30px;
     height: 30px;
     background: url(https://codernote.ru/files/cross.png) no-repeat center center;
@@ -432,7 +432,7 @@ h4 {
    25% { transform: rotate(360deg); }
   }
   
-  #close-popup:hover {
+  #closepopup:hover {
     animation: rota 4s infinite normal;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;

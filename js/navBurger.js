@@ -9,6 +9,8 @@ const mini = document.querySelectorAll('.minimazed');
 
 
 
+
+
 menuBurger.addEventListener("click", function (evt) {
     evt.preventDefault();
     menuAll.classList.remove("close_dropdown");
@@ -36,25 +38,6 @@ callbackBtn.addEventListener("click", function (evt) {
 });
 
 
-// function fadeIn(el) {
-  
-//     let opacity = 0.01;
-  
-// 	let timer = setInterval(function() {
-//         let opacity = document.getElementById(el).style.opacity;
-
-// 		if(opacity >= 1) {
-			
-// 			clearInterval(timer);
-		
-// 		}
-        
-
-// 		opacity += opacity * 0.1;
-   
-// 	}, 10);
-	
-// };
 
 function fadeIn(el, time) {
     el.style.opacity = 0;
@@ -80,18 +63,25 @@ function fadeIn(el, time) {
 mini.forEach(element => element.addEventListener("click", function (evt) {
 evt.preventDefault();
 const iPath = element.getAttribute('src');
-document.body.insertAdjacentHTML("beforeend", '<div id="overlay"></div><div id="magnify"><img src="'+iPath+'"><div id="close-popup"><i></i></div></div>');
-
+document.body.insertAdjacentHTML("beforeend", '<div id="overlay"></div><div id="magnify"><img src="'+iPath+'"><div id="closepopup"><i></i></div></div>');
 const newBlock = document.getElementById('magnify');
 const newLay = document.getElementById('overlay');
-
-
 fadeIn(newLay, 300);
 fadeIn(newBlock, 300);
+const closePopup = document.getElementById('closepopup');
 
+closePopup.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    document.body.removeChild(newBlock);
+    document.body.removeChild(newLay);
+});
 
+newLay.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    document.body.removeChild(newBlock);
+    document.body.removeChild(newLay);
+});
 
 
 }));
-
 
