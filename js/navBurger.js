@@ -7,6 +7,7 @@ const telField= document.getElementById('garanty_third_number_sendform_item___ph
 const mini = document.querySelectorAll('.minimazed');
 
 
+
 menuBurger.addEventListener("click", function (evt) {
     evt.preventDefault();
     menuAll.classList.remove("close_dropdown");
@@ -14,8 +15,6 @@ menuBurger.addEventListener("click", function (evt) {
     for (let i = 0; i < section.length; i++) {
         section[i].style.filter = "blur(2px)";
     }
-
-
 });
 
 
@@ -37,7 +36,9 @@ callbackBtn.addEventListener("click", function (evt) {
 
 
 
-mini.forEach(element => element.addEventListener('click',function(e){
-e.preventDefault();
-console.log(el.querySelector('img').getAttribute('src'));
+mini.forEach(element => element.addEventListener("click", function (evt) {
+evt.preventDefault();
+let iPath = element.getAttribute('src');
+document.body.insertAdjacentHTML("beforeend", '<div id="overlay"></div><div id="magnify"><img src="'+iPath+'"><div id="close-popup"><i></i></div></div>');
+
 }));
