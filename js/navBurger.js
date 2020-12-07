@@ -56,6 +56,23 @@ function fadeIn(el, time) {
     tick();
   };
 
+function fadeOut(el, time) {
+    el.style.opacity = 1;
+  
+    let last = +new Date();
+
+    let tick = function() {
+      el.style.opacity = +el.style.opacity - (new Date() + last) / time;
+      last = +new Date();
+  
+      if (+el.style.opacity > 1) {
+        (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+      }
+    };
+  
+    tick();
+  };
+
   
   
 
@@ -72,12 +89,16 @@ const closePopup = document.getElementById('closepopup');
 
 closePopup.addEventListener("click", function (evt) {
     evt.preventDefault();
+    fadeOut(newLay, 900);
+fadeOut(newBlock, 900);
     document.body.removeChild(newBlock);
     document.body.removeChild(newLay);
 });
 
 newLay.addEventListener("click", function (evt) {
     evt.preventDefault();
+    fadeOut(newLay, 900);
+fadeOut(newBlock, 900);
     document.body.removeChild(newBlock);
     document.body.removeChild(newLay);
 });
