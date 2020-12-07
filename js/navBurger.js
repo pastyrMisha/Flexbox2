@@ -56,16 +56,33 @@ function fadeIn(el, time) {
     tick();
   };
 
+// function fadeOut(el, time) {
+//     el.style.opacity = 1;
+  
+//     let last = +new Date();
+
+//     let tick = function() {
+//       el.style.opacity = +el.style.opacity - (new Date() - last) / time;
+//       last = +new Date();
+  
+//       if (+el.style.opacity > 0) {
+//         (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+//       }
+//     };
+  
+//     tick();
+//   };
+
 function fadeOut(el, time) {
     el.style.opacity = 1;
   
     let last = +new Date();
 
     let tick = function() {
-      el.style.opacity = +el.style.opacity - (new Date() + last) / time;
+      el.style.opacity = +el.style.opacity + (new Date() - last) / time;
       last = +new Date();
   
-      if (+el.style.opacity > 1) {
+      if (+el.style.opacity > 0) {
         (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
       }
     };
