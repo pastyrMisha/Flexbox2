@@ -4,6 +4,7 @@ const closeMenu = document.querySelector(".main-header_dropdown__close");
 const section = document.getElementsByTagName('section');
 const callbackBtn = document.querySelector('.callback');
 const telField= document.getElementById('garanty_third_number_sendform_item___phone');
+const mini = document.querySelectorAll('.minimazed');
 
 
 menuBurger.addEventListener("click", function (evt) {
@@ -27,12 +28,16 @@ closeMenu.addEventListener("click", function (evt) {
     }
 });
 
-//  focusMethod = function getFocus() {           
-//     telField.focus();
-//   }
 
 callbackBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     telField.focus();
     telField.scrollIntoView({block: "start", behavior: "smooth"});
 });
+
+
+
+mini.forEach(element => element.addEventListener('click',function(e){
+e.preventDefault();
+console.log(el.querySelector('img').getAttribute('src'));
+}));
