@@ -79,7 +79,7 @@ function fadeOut(el, time) {
     let last = +new Date();
 
     let tick = function() {
-      el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+      el.style.opacity = +el.style.opacity - (new Date() - last) / time;
       last = +new Date();
   
       if (+el.style.opacity > 0) {
