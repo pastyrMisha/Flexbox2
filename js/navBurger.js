@@ -34,7 +34,7 @@ closeMenu.addEventListener("click", function (evt) {
 callbackBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     telField.focus();
-    telField.scrollIntoView({block: "start", behavior: "smooth"});
+    telField.scrollIntoView({block: "center", behavior: "smooth"});
 });
 
 
